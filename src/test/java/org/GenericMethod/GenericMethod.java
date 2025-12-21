@@ -21,7 +21,8 @@ public class GenericMethod {
 
     public boolean checkVisibilityFlag(List<Locator> elements) {
         for (Locator ele : elements) {
-            if (ele.isVisible()) return true;
+            if (ele.isVisible()) 
+            	return true;
         }
         return false;
     }
@@ -75,10 +76,7 @@ public class GenericMethod {
 
     public String checkErrorMessage(Page page2) {
         Locator msg = page.locator(
-                ".//div[@role='dialog']//p | " +
-                        ".//div[contains(@style,'color: red')] | " +
-                        ".//span[text()='Required'] | " +
-                        ".//span[text()='Should be at least 5 characters'] |" +
+                "//div[text()='Warning: No match for E-Mail Address and/or Password.']|" +".//div[contains(@style,'color: red')] | " +".//span[text()='Required'] | " +".//span[text()='Should be at least 5 characters'] |" +
                         ".//span[text()='Passwords do not match'] |" +
                         ".//span[text()='Invalid']"
         );

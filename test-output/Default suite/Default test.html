@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 29 18:12:40 IST 2025</td>
+<td>Started on:</td><td>Sun Dec 21 22:57:29 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>104 seconds (104454 ms)</td>
+<tr><td>Total time:</td><td>100 seconds (100555 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,29 +76,523 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Login page", "Login Functionality"</td>
-<td><div><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/accoun] but found [https://tutorialsninja.com/demo/index.php?route=account/account]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:55)
-	at ✽.varify LoginPage &quot;Url&quot; IsDisplayed &quot;https://tutorialsninja.com/demo/index.php?route=account/accoun&quot;(file:///G:/playwrite/PlaywrightJavaCucumberTestNG-master/./src/test/resources/org/features/LoginPage.feature:12)
-</pre></div><a href='#' onClick='toggleBox("stack-trace873769155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace873769155'><pre>java.lang.AssertionError: expected [https://tutorialsninja.com/demo/index.php?route=account/accoun] but found [https://tutorialsninja.com/demo/index.php?route=account/account]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:55)
-	at ✽.varify LoginPage &quot;Url&quot; IsDisplayed &quot;https://tutorialsninja.com/demo/index.php?route=account/accoun&quot;(file:///G:/playwrite/PlaywrightJavaCucumberTestNG-master/./src/test/resources/org/features/LoginPage.feature:12)
+<td title='org.testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_LF_006_Verify 'Forgotten Password' link is available in the Login page and is working", "Login Functionality"</td>
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;) resolved to 2 elements:
+    1) &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#content&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+    2) &lt;a class=&quot;list-group-item&quot; href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#column-right&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;) resolved to 2 elements:
+    1) &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#content&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+    2) &lt;a class=&quot;list-group-item&quot; href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#column-right&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\javascript.js:235:12)
+    at async C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:959:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:929:24)
+    at async C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1014:29
+    at async ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.click (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\frameDispatcher.js:157:12)
+    at async LongStandingScope._race (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:96:14)
+}
+Call log:
+- waiting for locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2413)
+	at org.pages.LoginPage.ForgetPasswordlink(LoginPage.java:52)
+	at org.stepDefinations.LoginStepDef.enter_login_page_forgotten_passwordlink(LoginStepDef.java:61)
+	at ✽.Enter LoginPage Forgotten_Passwordlink(file:///G:/playwrite/PlaywrightJavaCucumberTestNG-master/./src/test/resources/org/features/LoginPage.feature:56)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;) resolved to 2 elements:
+    1) &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#content&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+    2) &lt;a class=&quot;list-group-item&quot; href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#column-right&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;) resolved to 2 elements:
+    1) &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#content&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+    2) &lt;a class=&quot;list-group-item&quot; href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#column-right&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\javascript.js:235:12)
+    at async C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:959:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:929:24)
+    at async C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1014:29
+    at async ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.click (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\frameDispatcher.js:157:12)
+    at async LongStandingScope._race (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:96:14)
+}
+Call log:
+- waiting for locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2413)
+	at org.pages.LoginPage.ForgetPasswordlink(LoginPage.java:52)
+	at org.stepDefinations.LoginStepDef.enter_login_page_forgotten_passwordlink(LoginStepDef.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1536399059", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1536399059'><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;) resolved to 2 elements:
+    1) &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#content&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+    2) &lt;a class=&quot;list-group-item&quot; href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#column-right&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;) resolved to 2 elements:
+    1) &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#content&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+    2) &lt;a class=&quot;list-group-item&quot; href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#column-right&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\javascript.js:235:12)
+    at async C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:959:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:929:24)
+    at async C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1014:29
+    at async ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.click (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\frameDispatcher.js:157:12)
+    at async LongStandingScope._race (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:96:14)
+}
+Call log:
+- waiting for locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2413)
+	at org.pages.LoginPage.ForgetPasswordlink(LoginPage.java:52)
+	at org.stepDefinations.LoginStepDef.enter_login_page_forgotten_passwordlink(LoginStepDef.java:61)
+	at ✽.Enter LoginPage Forgotten_Passwordlink(file:///G:/playwrite/PlaywrightJavaCucumberTestNG-master/./src/test/resources/org/features/LoginPage.feature:56)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;Error: strict mode violation: locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;) resolved to 2 elements:
+    1) &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#content&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+    2) &lt;a class=&quot;list-group-item&quot; href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#column-right&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+
+  name=&apos;Error
+  stack=&apos;Error: Error: strict mode violation: locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;) resolved to 2 elements:
+    1) &lt;a href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#content&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+    2) &lt;a class=&quot;list-group-item&quot; href=&quot;https://tutorialsninja.com/demo/index.php?route=account/forgotten&quot;&gt;Forgotten Password&lt;/a&gt; aka locator(&quot;#column-right&quot;).getByRole(AriaRole.LINK, new Locator.GetByRoleOptions().setName(&quot;Forgotten Password&quot;))
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at async LongStandingScope._race (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\javascript.js:235:12)
+    at async C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:959:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:929:24)
+    at async C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1014:29
+    at async ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.click (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\frameDispatcher.js:157:12)
+    at async LongStandingScope._race (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\utils\manualPromise.js:96:14)
+    at async FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:96:14)
+}
+Call log:
+- waiting for locator(&quot;//a[text()=&apos;Forgotten Password&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:160)
+	at com.microsoft.playwright.Locator.click(Locator.java:2413)
+	at org.pages.LoginPage.ForgetPasswordlink(LoginPage.java:52)
+	at org.stepDefinations.LoginStepDef.enter_login_page_forgotten_passwordlink(LoginStepDef.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>96</td>
-<td>org.testRunners.TestRunner@24569dba</td></tr>
+<td>4</td>
+<td>org.testRunners.TestRunner@8462f31</td></tr>
+<tr>
+<td title='org.testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_LF_003_Verify logging into the Application using invalid email address and valid Password)", "Login Functionality"</td>
+<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//div[text()=&apos;Warning: No match for E-Mail Address and/or Password.&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5189)
+	at org.pages.LoginPage.Error_message(LoginPage.java:73)
+	at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:95)
+	at ✽.varify LoginPage &quot;error_message&quot; IsDisplayed &quot;Warning: No match for E-Mail Address and/or Password.&quot;(file:///G:/playwrite/PlaywrightJavaCucumberTestNG-master/./src/test/resources/org/features/LoginPage.feature:38)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//div[text()=&apos;Warning: No match for E-Mail Address and/or Password.&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5189)
+	at org.pages.LoginPage.Error_message(LoginPage.java:73)
+	at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace73878928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace73878928'><pre>com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//div[text()=&apos;Warning: No match for E-Mail Address and/or Password.&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5189)
+	at org.pages.LoginPage.Error_message(LoginPage.java:73)
+	at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:95)
+	at ✽.varify LoginPage &quot;error_message&quot; IsDisplayed &quot;Warning: No match for E-Mail Address and/or Password.&quot;(file:///G:/playwrite/PlaywrightJavaCucumberTestNG-master/./src/test/resources/org/features/LoginPage.feature:38)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-9972459129400979915\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//div[text()=&apos;Warning: No match for E-Mail Address and/or Password.&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5189)
+	at org.pages.LoginPage.Error_message(LoginPage.java:73)
+	at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:95)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>35</td>
+<td>org.testRunners.TestRunner@8462f31</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_LF_001_Verify logging into the Application using valid credentials", "Login Functionality"</td>
+<td></td>
+<td>7</td>
+<td>org.testRunners.TestRunner@8462f31</td></tr>
+<tr>
+<td title='org.testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_LF_005_Verify logging into the Application without providing any credentials", "Login Functionality"</td>
+<td></td>
+<td>5</td>
+<td>org.testRunners.TestRunner@8462f31</td></tr>
+<tr>
+<td title='org.testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_LF_004_Verify logging into the Application using valid email address and invalid Password)", "Login Functionality"</td>
+<td></td>
+<td>5</td>
+<td>org.testRunners.TestRunner@8462f31</td></tr>
+<tr>
+<td title='org.testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify Login page", "Login Functionality"</td>
+<td></td>
+<td>28</td>
+<td>org.testRunners.TestRunner@8462f31</td></tr>
+<tr>
+<td title='org.testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: org.testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_LF_002_Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)", "Login Functionality"</td>
+<td></td>
+<td>5</td>
+<td>org.testRunners.TestRunner@8462f31</td></tr>
 </table><p>
 </body>
 </html>

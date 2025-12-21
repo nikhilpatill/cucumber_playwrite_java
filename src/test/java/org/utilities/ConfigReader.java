@@ -2,40 +2,55 @@ package org.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Properties;
+import org.hooks.AppHooks;
+
+import com.microsoft.playwright.Page;
+
+import org.hooks.AppHooks;
 
 public class ConfigReader {
 
-    private static final String FILE_PATH = "./src/test/resources/org/propertiesFiles/Config.properties";
+	private Page page = AppHooks.page;
+	private static final String FILE_PATH = "./src/test/resources/org/propertiesFiles/Config.properties";
 
-    // Get single value
-    public String getPropData(String key) {
-        try (FileInputStream fis = new FileInputStream(FILE_PATH)) {
+	// Get single value
+	public String getPropData(String key) {
+		try (FileInputStream fis = new FileInputStream(FILE_PATH)) {
 
-            Properties prop = new Properties();
-            prop.load(fis);
-            return prop.getProperty(key);
+			Properties prop = new Properties();
+			prop.load(fis);
+			return prop.getProperty(key);
 
-        } catch (IOException e) {
-            System.out.println("❌ Unable to read property: " + key);
-            e.printStackTrace();
-            return null;
-        }
-    }
+		} catch (IOException e) {
+			System.out.println("❌ Unable to read property: " + key);
+			e.printStackTrace();
+			return null;
+		}
+	}
 
+	// Get all properties
+	public Properties getProp() {
+		try (FileInputStream fis = new FileInputStream(FILE_PATH)) {
 
-    // Get all properties
-    public Properties getProp() {
-        try (FileInputStream fis = new FileInputStream(FILE_PATH)) {
+			Properties prop = new Properties();
+			prop.load(fis);
+			return prop;
 
-            Properties prop = new Properties();
-            prop.load(fis);
-            return prop;
+		} catch (IOException e) {
+			System.out.println("❌ Unable to load Config.properties");
+			e.printStackTrace();
+			return null;
+		}
+	}
 
-        } catch (IOException e) {
-            System.out.println("❌ Unable to load Config.properties");
-            e.printStackTrace();
-            return null;
-        }
-    }
+	public static String takeScreenshot(Page page, String scenarioName) {
+
+		String path = "test-output/screenshots/" + scenarioName.replace(" ", "_") + ".png";
+
+		page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get(path)).setFullPage(true));
+
+		return path;
+	}
 }

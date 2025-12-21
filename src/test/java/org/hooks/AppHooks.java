@@ -1,13 +1,6 @@
 package org.hooks;
 
 import com.microsoft.playwright.*;
-import com.microsoft.playwright.options.ScreenshotType;
-
-import java.util.Base64;
-
-import com.aventstack.extentreports.MediaEntityBuilder;
-
-
 import io.cucumber.java.*;
 
 public class AppHooks {
@@ -17,12 +10,6 @@ public class AppHooks {
     public static BrowserContext context;
     public static Page page;
     public static Scenario scenario;
-
-    // Store open browsers (if needed)
-    private static final java.util.Map<String, BrowserContext> browserInstance = new java.util.HashMap<>();
-
-
-    // ------------------ BEFORE HOOKS ----------------------
 
     @Before(order = 1)
     public void initScenario(Scenario scn) {
@@ -34,51 +21,36 @@ public class AppHooks {
 
         String url = "https://tutorialsninja.com/demo/index.php?route=account/login";
 
-        if (playwright == null) {
-            playwright = Playwright.create();
-        }
+        playwright = Playwright.create();
 
-        if (browser == null) {
-            browser = playwright.chromium()
-                    .launch(new BrowserType.LaunchOptions().setHeadless(false));
-        }
+        browser = playwright.chromium().launch(
+                new BrowserType.LaunchOptions().setHeadless(false)
+        );
 
-        // Reuse or create new context
-        if (browserInstance.containsKey(url)) {
-            context = browserInstance.get(url);
-            page = context.pages().get(0);
-        } else {
-            context = browser.newContext(
-                    new Browser.NewContextOptions()
-                            .setIgnoreHTTPSErrors(true)
-            );
-            page = context.newPage();
-            browserInstance.put(url, context);
-        }
+        context = browser.newContext(
+                new Browser.NewContextOptions().setIgnoreHTTPSErrors(true)
+        );
 
+        page = context.newPage();
         page.navigate(url);
     }
 
+    @AfterStep
+    public void afterEachStep(Scenario scenario) {
 
-    // ------------------ AFTER HOOKS ----------------------
-    
-    
-
-    @After(order = 10)
-    public void takeScreenshot(Scenario scenario) {
-       
-    }
-    
-
-    @After(order = 20)
-    public void closeContext() {
-        if (context != null) {
-            context.close();
+        if (scenario.isFailed() && page != null) {
+            byte[] screenshot = page.screenshot(
+                    new Page.ScreenshotOptions().setFullPage(true)
+            );
+            scenario.attach(screenshot, "image/png", "Step Screenshot");
         }
     }
 
-    @AfterAll
-    public static void afterAll() {
+    @After(order = 20)
+    public void tearDown() {
+
+        if (page != null) page.close();
+        if (context != null) context.close();
         if (browser != null) browser.close();
         if (playwright != null) playwright.close();
     }
