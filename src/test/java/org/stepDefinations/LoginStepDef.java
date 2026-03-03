@@ -121,10 +121,11 @@ public class LoginStepDef {
 	}
 
 	@When("Enter LoginPage submitBtnn")
-	public void enter_login_page_submit_btnn() {
+	public void enter_login_page_submit_btnn() throws InterruptedException {
 
-		for (int i = 0; i <= 5; i++) {
+		for (int i = 0; i <=30; i++) {
 			loginPage.clickSubmit();
+			Thread.sleep(1000);
 		}
 
 	}
@@ -233,6 +234,40 @@ public class LoginStepDef {
 	   
 		GenericMethod.navigateToLoginPage();
 	}
+
+	
+    @Given("User is on the Login Page")
+    public void user_is_on_the_login_page() {
+        page.navigate("https://tutorialsninja.com/demo/index.php?route=account/login");
+    }
+
+    @Then("Verify the Login Page details")
+    public void verify_the_login_page_details() {
+
+        // 1️⃣ Verify Breadcrumb
+        String breadcrumb = page.locator("//ul[@class='breadcrumb']//li[last()]")
+                .textContent().trim();
+        sa.assertEquals(breadcrumb, "Account Login", "❌ Breadcrumb mismatch!");
+
+        // 2️⃣ Verify Page Heading
+        String heading = page.locator("//h2[text()='Returning Customer']")
+                .textContent().trim();
+        sa.assertEquals(heading, "Returning Customer", "❌ Page Heading mismatch!");
+
+        // 3️⃣ Verify Page Title
+        String actualTitle = page.title();
+        sa.assertEquals(actualTitle, "Account Login", "❌ Page Title mismatch!");
+
+        // 4️⃣ Verify Page URL
+        String actualUrl = page.url();
+        sa.assertEquals(
+                actualUrl,
+                "https://tutorialsninja.com/demo/index.php?route=account/login",
+                "❌ URL mismatch!"
+        );
+
+        System.out.println(">>> 🟢 Login Page Verified Successfully!");
+    }
 
 	// -------------------------- VALIDATIONS --------------------------
 

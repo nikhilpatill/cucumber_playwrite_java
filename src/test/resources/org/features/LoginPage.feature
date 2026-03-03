@@ -1,5 +1,4 @@
-
- 
+  
 Feature: Login Functionality
 
  Background:
@@ -102,13 +101,13 @@ Examples:
   
   
    Scenario: TC_LF_013_Verify the text into the Password field is toggled to hide its visibility
-    Then varify LoginPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/login"
-    When Enter LoginPage Password_fieldd
+   Then varify LoginPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/login"
+   When Enter LoginPage Password_fieldd
     
     
-    #Scenario: TC_LF_014_Verify the copying of the text entered into the Password field
-    #Then varify LoginPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/login"
-    #When Enter LoginPage copyPassword_fieldd
+  #Scenario: TC_LF_014_Verify the copying of the text entered into the Password field
+  #Then varify LoginPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/login"
+  #When Enter LoginPage copyPassword_fieldd
     
     
   
@@ -129,10 +128,14 @@ Examples:
     Then Close the Browser
     Then Open the Browser and launch the application "URL"
  
-  @nik 
+ 
   Scenario: TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right Column options, Header options, Menu Options, Footer options and any other options)
   Then varify LoginPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/login"
   Then Click on Continue button under New Customer
+  
+  
+ Scenario: TC_LF_019_Verify the Breakcrumb, Page Heading, Page Title and Page URL of Login page
+ Then Verify the Login Page details
   
   
     

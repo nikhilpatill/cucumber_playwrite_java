@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Ecommerce_Automation_Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 21, 2026 11:51:43 pm</span></a>
+<a href="#"><span class="badge badge-primary">Feb 28, 2026 09:51:11 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 21, 2026 11:51:43 pm</h3>
+<h3>Feb 28, 2026 09:51:11 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 21, 2026 11:52:05 pm</h3>
+<h3>Feb 28, 2026 09:54:17 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>21</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>114</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login Functionality":20.345
+"register Functionality":184.477
 };
 </script>
 <div class="row">
@@ -173,7 +173,7 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@nik</td>
-<td>1</td>
+<td>21</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -219,13 +219,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 21,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
+passGrandChild: 114,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -261,9 +261,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Login Functionality</p>
+            <p class="name">register Functionality</p>
             <p class="text-sm">
-              <span>11:51:45 pm</span> / <span>00:00:20:345</span>
+              <span>9:51:12 pm</span> / <span>00:03:04:477</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -271,10 +271,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Login Functionality</h5>
-<span class='badge badge-success'>01.21.2026 11:51:45 pm</span>
-<span class='badge badge-danger'>01.21.2026 11:52:05 pm</span>
-<span class='badge badge-default'>00:00:20:345</span>
+<h5 class="test-status text-pass">register Functionality</h5>
+<span class='badge badge-success'>02.28.2026 9:51:12 pm</span>
+<span class='badge badge-danger'>02.28.2026 9:54:17 pm</span>
+<span class='badge badge-default'>00:03:04:477</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -286,29 +286,855 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right Column options, Header options, Menu Options, Footer options and any other options)</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>verify register page</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="org.stepDefinations.LoginStepDef.user_is_on_login_page()">
-                <span>Given user_is_on_LoginPage</span>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.user_is_on_login_page()">
+                <span>Given user_is_on_registerPage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(java.lang.String,java.lang.String)">
-                <span>Then varify LoginPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/login"</span>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.varify_register_page_is_displayed(java.lang.String,java.lang.String)">
+                <span>Then varify RegisterPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/login"</span>
       <div>Actual URL is: https://tutorialsninja.com/demo/index.php?route=account/login
       </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="org.stepDefinations.LoginStepDef.click_on_continue_button_under_new_customer()">
-                <span>Then Click on Continue button under New Customer</span>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_continoue_button()">
+                <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.varify_register_page_is_displayed(java.lang.String,java.lang.String)">
+                <span>Then varify RegisterPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/register"</span>
+      <div>Actual URL is: https://tutorialsninja.com/demo/index.php?route=account/register
+      </div>
       <div>
       </div>
               </div>
           </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "First Name must be between 1 and 32 characters!"</span>
+      <div>Actual ErrorMessage is: First Name must be between 1 and 32 characters!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "Last Name must be between 1 and 32 characters!"</span>
+      <div>Actual ErrorMessage is: Last Name must be between 1 and 32 characters!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "E-Mail Address does not appear to be valid!"</span>
+      <div>Actual ErrorMessage is: E-Mail Address does not appear to be valid!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "Telephone must be between 3 and 32 characters!"</span>
+      <div>Actual ErrorMessage is: Telephone must be between 3 and 32 characters!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "Password must be between 4 and 20 characters!"</span>
+      <div>Actual ErrorMessage is: Password must be between 4 and 20 characters!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_002_Verify'Thank you for registering' email is sent to the registered email address as a confirmation for registering the account</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.user_is_on_login_page()">
+                <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_continoue_button()">
+                <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.enter_the_all_details_of_registered_account()">
+                <span>When Enter the all details of registered_account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_Register_Accountcontinoue_button()">
+                <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.varify_register_page_is_displayed(java.lang.String,java.lang.String)">
+                <span>Then varify RegisterPage "text" IsDisplayed "Your Account Has Been Created!"</span>
+      <div>Atual txt is :Your Account Has Been Created!
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="90"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "First Name must be between 1 and 32 characters!"</span>
+      <div>Actual ErrorMessage is: First Name must be between 1 and 32 characters!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="102"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "Last Name must be between 1 and 32 characters!"</span>
+      <div>Actual ErrorMessage is: Last Name must be between 1 and 32 characters!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "E-Mail Address does not appear to be valid!"</span>
+      <div>Actual ErrorMessage is: E-Mail Address does not appear to be valid!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="126"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "Telephone must be between 3 and 32 characters!"</span>
+      <div>Actual ErrorMessage is: Telephone must be between 3 and 32 characters!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="138"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "Password must be between 4 and 20 characters!"</span>
+      <div>Actual ErrorMessage is: Password must be between 4 and 20 characters!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="150"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_005_Verify Registering an Account when 'Yes' option is selected for Newsletter field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.user_is_on_login_page()">
+                <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_continoue_button()">
+                <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.enter_the_all_details_of_registered_account()">
+                <span>When Enter the all details of registered_account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.when_option_is_selected(java.lang.String,java.lang.String)">
+                <span>When when 'Subscribe' option is selected "yes"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_Register_Accountcontinoue_button()">
+                <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="164"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_006_Verify Registering an Account when 'No' option is selected for Newsletter field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.user_is_on_login_page()">
+                <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_continoue_button()">
+                <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.enter_the_all_details_of_registered_account()">
+                <span>When Enter the all details of registered_account</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.when_option_is_selected(java.lang.String,java.lang.String)">
+                <span>When when 'Subscribe' option is selected "No"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_Register_Accountcontinoue_button()">
+                <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="178"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_007_Verify different ways of navigating to 'Register Account' page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.user_is_on_login_page()">
+                <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_continoue_button()">
+                <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.click_register_page_register_link()">
+                <span>When click  RegisterPage Register_link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="org.stepDefinations.RegisterStepDef.varify_register_page_is_displayed(java.lang.String,java.lang.String)">
+                <span>Then varify RegisterPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/register"</span>
+      <div>Actual URL is: https://tutorialsninja.com/demo/index.php?route=account/register
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="190"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Password Confirm' fields</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="191"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Password Confirm' fields</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter the all details of registered_account_different_passwords</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When when 'Subscribe' option is selected "No"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "Password confirmation does not match password!"</span>
+      <div>Actual ErrorMessage is: Password confirmation does not match password!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="207"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing email address)</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="208"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing email address)</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter the all details of existing_account_details</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters Error_Msg "Warning: E-Mail Address is already registered!"</span>
+      <div>Actual ErrorMessage is: Warning: E-Mail Address is already registered!
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="222"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="223"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters "firstname" "nikhil"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "lastname" "patil"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "email" "amotoori"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "telephone" "7788270678"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "password" "arun@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "confirm" "arun@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then varify RegisterPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/register"</span>
+      <div>Actual URL is: https://tutorialsninja.com/demo/index.php?route=account/register
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="247"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters "firstname" "nikhil"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "lastname" "patil"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "email" "amotoori@"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "telephone" "7788270678"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "password" "arun@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "confirm" "arun@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then varify RegisterPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/register"</span>
+      <div>Actual URL is: https://tutorialsninja.com/demo/index.php?route=account/register
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="271"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters "firstname" "nikhil"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "lastname" "patil"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "email" "amotoori@gmail"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "telephone" "7788270678"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "password" "arun@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "confirm" "arun@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then varify RegisterPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/register"</span>
+      <div>Actual URL is: https://tutorialsninja.com/demo/index.php?route=account/register
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="295"><span class="badge log pass-bg mr-2">Pass</span>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user_is_on_registerPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage continoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User enters "firstname" "nikhil"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "lastname" "patil"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "email" "amotoori@gmail."</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "telephone" "7788270678"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "password" "arun@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User enters "confirm" "arun@123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click  RegisterPage Register_Accountcontinoue_button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then varify RegisterPage "Url" IsDisplayed "https://tutorialsninja.com/demo/index.php?route=account/register"</span>
+      <div>Actual URL is: https://tutorialsninja.com/demo/index.php?route=account/register
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
         </div>
   </div>
 </div>
@@ -334,15 +1160,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>21</span>
 </span>
 <p class="name">@nik</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">21 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@nik</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="pass" class='badge log pass-bg'>21 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -355,11 +1181,211 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:51:45 pm</td>
+<td>21:51:12 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right Column options, Header options, Menu Options, Footer options and any other options)</a>
+<a href="#" class="linked" test-id='1' id='2'>verify register page</a>
 <div class="">
-<span class="badge badge-default">Login Functionality.TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right Column options, Header options, Menu Options, Footer options and any other options)</span>
+<span class="badge badge-default">register Functionality.verify register page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:51:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:51:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:51:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:51:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='51'>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='63'>TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_001_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='75'>TC_RF_002_Verify'Thank you for registering' email is sent to the registered email address as a confirmation for registering the account</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_002_Verify'Thank you for registering' email is sent to the registered email address as a confirmation for registering the account</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='90'>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='102'>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='114'>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='138'>TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_004_Verify Registering an Account by providing only the Mandatory fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='150'>TC_RF_005_Verify Registering an Account when 'Yes' option is selected for Newsletter field</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_005_Verify Registering an Account when 'Yes' option is selected for Newsletter field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:52:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='164'>TC_RF_006_Verify Registering an Account when 'No' option is selected for Newsletter field</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_006_Verify Registering an Account when 'No' option is selected for Newsletter field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:53:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='178'>TC_RF_007_Verify different ways of navigating to 'Register Account' page</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_007_Verify different ways of navigating to 'Register Account' page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:53:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Password Confirm' fields</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Password Confirm' fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:53:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='208'>TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing email address)</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing email address)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:53:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='223'>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:53:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='247'>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:53:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='271'>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:54:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='295'>TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</a>
+<div class="">
+<span class="badge badge-default">register Functionality.TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field</span>
 </div>
 </td>
 </tr>

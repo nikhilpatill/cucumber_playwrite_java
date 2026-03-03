@@ -4,6 +4,8 @@ import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.ScreenshotType;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 import org.hooks.AppHooks;
 
 import java.nio.file.Path;
@@ -85,6 +87,165 @@ public class GenericMethod {
 		if (msg.isVisible()) {
 			return msg.innerText();
 		}
+		return null;
+	}
+
+	public void Fill_alldetailes_registered_account(Page page2) {
+		Locator listxpath = page2.locator(
+				"//input[@name='firstname']|//input[@name='lastname']|//input[@name='email']|//input[@name='telephone']|//input[@name='password']|//input[@name='confirm']");
+
+		List<ElementHandle> elements = listxpath.elementHandles();
+
+		for (ElementHandle el : elements) {
+
+			String text = el.getAttribute("name").trim();
+
+			if (text.equalsIgnoreCase("firstname")) {
+				String uniqueUser = "user" + System.currentTimeMillis();
+				el.fill(uniqueUser);
+
+			} else if (text.equalsIgnoreCase("lastname")) {
+				String uniqueUser = "user2" + System.currentTimeMillis();
+				el.fill(uniqueUser);
+			} else if (text.equalsIgnoreCase("email")) {
+				long timestamp = System.currentTimeMillis();
+				String uniqueEmail = "testuser" + timestamp + "@gmail.com";
+
+				el.fill(uniqueEmail);
+			} else if (text.equalsIgnoreCase("telephone")) {
+				el.fill("7726363656");
+			}
+
+			else if (text.equalsIgnoreCase("password")) {
+				el.fill("Success@123");
+			} else if (text.equalsIgnoreCase("confirm")) {
+				el.fill("Success@123");
+
+			}
+
+		}
+
+	}
+
+	public void Fill_alldetailes_existing_account_details(Page page2) throws InterruptedException {
+		Locator listxpath = page2.locator(
+				"//input[@name='firstname']|//input[@name='lastname']|//input[@name='email']|//input[@name='telephone']|//input[@name='password']|//input[@name='confirm']");
+
+		List<ElementHandle> elements = listxpath.elementHandles();
+		Thread.sleep(1000);
+		for (ElementHandle el : elements) {
+
+			String text = el.getAttribute("name").trim();
+
+			if (text.equalsIgnoreCase("firstname")) {
+				el.fill("Arun");
+			} else if (text.equalsIgnoreCase("lastname")) {
+				el.fill("Motoori");
+			} else if (text.equalsIgnoreCase("email")) {
+				el.fill("amotoori1@gmail.com");
+			} else if (text.equalsIgnoreCase("telephone")) {
+				el.fill("09246812111");
+			} else if (text.equalsIgnoreCase("password")) {
+				el.fill("12345");
+			} else if (text.equalsIgnoreCase("confirm")) {
+				el.fill("12345");
+
+			}
+
+		}
+
+	}
+
+	public void Fill_alldetailes_different_password(Page page2) throws InterruptedException {
+		Locator listxpath = page2.locator(
+				"//input[@name='firstname']|//input[@name='lastname']|//input[@name='email']|//input[@name='telephone']|//input[@name='password']|//input[@name='confirm']");
+
+		List<ElementHandle> elements = listxpath.elementHandles();
+		Thread.sleep(1000);
+		for (ElementHandle el : elements) {
+
+			String text = el.getAttribute("name").trim();
+
+			if (text.equalsIgnoreCase("firstname")) {
+				String uniqueUser = "user" + System.currentTimeMillis();
+				el.fill(uniqueUser);
+
+			} else if (text.equalsIgnoreCase("lastname")) {
+				String uniqueUser = "user2" + System.currentTimeMillis();
+				el.fill(uniqueUser);
+			} else if (text.equalsIgnoreCase("email")) {
+				long timestamp = System.currentTimeMillis();
+				String uniqueEmail = "testuser" + timestamp + "@gmail.com";
+
+				el.fill(uniqueEmail);
+			} else if (text.equalsIgnoreCase("telephone")) {
+				el.fill("7726363656");
+			}
+
+			else if (text.equalsIgnoreCase("password")) {
+				el.fill("112344343");
+			} else if (text.equalsIgnoreCase("confirm")) {
+				el.fill("Success@123");
+
+			}
+
+		}
+
+	}
+
+	public void Fill_alldetailes_different_Gmailid(Page page2, String name, String values) throws InterruptedException {
+		Locator listxpath = page2.locator("//input[@name='" + name + "']");
+
+		List<ElementHandle> elements = listxpath.elementHandles();
+		Thread.sleep(1000);
+		for (ElementHandle el : elements) {
+
+			String text = el.getAttribute("name").trim();
+
+			if (text.equalsIgnoreCase("firstname")) {
+				String uniqueUser = "user" + System.currentTimeMillis();
+				el.fill(values);
+
+			} else if (text.equalsIgnoreCase("lastname")) {
+				String uniqueUser = "user2" + System.currentTimeMillis();
+				el.fill(values);
+			} else if (text.equalsIgnoreCase("email")) {
+				long timestamp = System.currentTimeMillis();
+				String uniqueEmail = "testuser" + timestamp + "@gmail.com";
+
+				el.fill(values);
+			} else if (text.equalsIgnoreCase("telephone")) {
+				el.fill(values);
+			}
+
+			else if (text.equalsIgnoreCase("password")) {
+				el.fill(values);
+			} else if (text.equalsIgnoreCase("confirm")) {
+				el.fill(values);
+
+			}
+
+		}
+
+	}
+
+	public String ErrorMessage_register_page(Page page2, String name) {
+
+		String xpath = "//div[text()='" + name + "']";
+		Locator listMsg = page2.locator(xpath);
+
+		List<ElementHandle> elements = listMsg.elementHandles();
+
+		for (ElementHandle el : elements) {
+
+			String text = el.innerText().trim();
+
+			if (text.equalsIgnoreCase(name)) {
+				return text; // return the matched message
+			}
+		}
+
+		System.out.println("Error message not available: " + name);
 		return null;
 	}
 
