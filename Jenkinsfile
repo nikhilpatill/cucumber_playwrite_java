@@ -22,34 +22,14 @@ pipeline {
 
         stage('Build') {
             steps {
-                dir('/PlaywrightJavaCucumberTestNG-master') {
-                     bat 'mvn clean install -Dmaven.test.failure.ignore=true'
-                }
-            }
-            post {
-                success {
-                    junit 'PlaywrightJavaCucumberTestNG-master/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'Playwright-Java-PageObjectModel-master/target/*.jar'
-                }
+                bat 'mvn clean install -Dmaven.test.failure.ignore=true'
             }
         }
 
-        stage("Deploy to QA") {
+        stage('Run Tests') {
             steps {
-                echo "Deploying to QA..."
+                bat 'mvn test'
             }
         }
-
-        stage('Regression Automation Test') {
-            steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    dir('PlaywrightJavaCucumberTestNG-master') {
-                        bat 'mvn clean test -Dsurefire.suiteXmlFiles=/PlaywrightJavaCucumberTestNG-master/testng.xml'
-                    }
-                }
-            }
-        }
-
-        
     }
 }
