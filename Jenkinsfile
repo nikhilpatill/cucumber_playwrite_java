@@ -23,7 +23,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir('/PlaywrightJavaCucumberTestNG-master') {
-                    bat 'mvn clean package -Dmaven.test.failure.ignore=true'
+                     bat 'mvn clean install -Dmaven.test.failure.ignore=true'
                 }
             }
             post {
