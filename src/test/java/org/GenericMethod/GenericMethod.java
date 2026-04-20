@@ -7,6 +7,9 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 import org.hooks.AppHooks;
+import org.testng.asserts.SoftAssert;
+
+import static org.testng.Assert.expectThrows;
 
 import java.nio.file.Path;
 import java.util.List;
@@ -19,9 +22,11 @@ public class GenericMethod {
 	public static Browser browser;
 	public static BrowserContext context;
 	public static Page page1;
+	SoftAssert sa = new SoftAssert();
 
 	public GenericMethod() {
-		this.page = AppHooks.page; // use global Playwright page
+		this.page = AppHooks.page;
+		SoftAssert sa = new SoftAssert();// use global Playwright page
 	}
 
 	// ---------------------- VISIBILITY METHODS ----------------------
@@ -204,10 +209,12 @@ public class GenericMethod {
 
 			if (text.equalsIgnoreCase("firstname")) {
 				String uniqueUser = "user" + System.currentTimeMillis();
+				el.focus();
 				el.fill(values);
 
 			} else if (text.equalsIgnoreCase("lastname")) {
 				String uniqueUser = "user2" + System.currentTimeMillis();
+				el.focus();
 				el.fill(values);
 			} else if (text.equalsIgnoreCase("email")) {
 				long timestamp = System.currentTimeMillis();
@@ -226,6 +233,47 @@ public class GenericMethod {
 			}
 
 		}
+
+	}
+	
+	
+	public String Register_Account_page_have_the_proper_placeholders(Page page2, String name) throws InterruptedException {
+		Locator listxpath = page2.locator("//input[@placeholder='" + name + "']");
+
+		List<ElementHandle> elements = listxpath.elementHandles();
+		Thread.sleep(1000);
+		for (ElementHandle el : elements) {
+
+			String text = el.getAttribute("name").trim();
+
+			if (text.equalsIgnoreCase(name)) {
+				
+				return text;
+
+			} else if (text.equalsIgnoreCase(name)) {
+				return text;
+
+			} else if (text.equalsIgnoreCase(name)) {
+				return text;
+			
+			} else if (text.equalsIgnoreCase(name)) {
+				return text;
+				
+
+			}
+
+			else if (text.equalsIgnoreCase(name)) {
+				return text;
+				
+
+			} else if (text.equalsIgnoreCase(name)) {
+				return text;
+				
+
+			}
+
+		}
+		return name;
 
 	}
 
@@ -359,6 +407,7 @@ public class GenericMethod {
 		String txt = AppHooks.page.locator("//h1[text()='Register Account']").textContent();
 		if (txt.equalsIgnoreCase("Register Account")) {
 			System.out.println("text matched" + txt);
+			
 		}
 	}
 

@@ -1,4 +1,4 @@
-package org.stepDefinations;
+package parallel;
 
 import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Locator;

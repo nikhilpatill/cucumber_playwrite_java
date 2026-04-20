@@ -2,5 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="FailTest">
+	  <classes>
+            <class name="org\testRunners.testRunner"/>
+        </classes>  
   </test> <!-- FailTest -->
 </suite> <!-- Suite -->

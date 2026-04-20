@@ -1,4 +1,4 @@
- @nik 
+@smoke
 Feature: register Functionality
 
  Background:
@@ -87,6 +87,7 @@ Examples:
   | Warning: E-Mail Address is already registered!|
   
   
+  
   Scenario Outline: TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field
   When click  RegisterPage continoue_button
   When User enters "firstname" "<firstname>"
@@ -105,4 +106,17 @@ Examples:
   |nikhil     | patil    |amotoori@      |7788270678| arun@123 | arun@123|
   |nikhil     | patil    |amotoori@gmail |7788270678| arun@123 | arun@123|
   |nikhil     | patil    |amotoori@gmail.|7788270678| arun@123 | arun@123|
+  
+   @nik 
+  Scenario: TC_RF_013_Verify all the fields in the Register Account page have the proper placeholders
+  When click  RegisterPage continoue_button
+  When placeholders "First Name" 
+  And placeholders "Last Name" 
+  And placeholders "E-Mail" 
+  And placeholders "Telephone" 
+  And placeholders "Password" 
+  And placeholders "Password Confirm" 
+ 
+  
+  
   

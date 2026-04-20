@@ -1,363 +1,409 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="15" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-28T21:51:10 IST" name="Default suite" finished-at="2026-02-28T21:54:22 IST" duration-ms="192053">
+  <suite started-at="2026-04-05T13:05:14 IST" name="Default suite" finished-at="2026-04-05T13:08:49 IST" duration-ms="215435">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-28T21:51:10 IST" name="Default test" finished-at="2026-02-28T21:54:22 IST" duration-ms="192053">
+    <test started-at="2026-04-05T13:05:14 IST" name="Default test" finished-at="2026-04-05T13:08:49 IST" duration-ms="215435">
       <class name="org.testRunners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:51:10 IST" name="setUpClass" finished-at="2026-02-28T21:51:12 IST" duration-ms="2230" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:05:14 IST" name="setUpClass" finished-at="2026-04-05T13:05:16 IST" duration-ms="1818" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@28b458e6]]>
+                <![CDATA[org.testng.TestRunner@64440065]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:51:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:51:37 IST" duration-ms="24658" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:05:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:05:42 IST" duration-ms="26718" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["verify register page"]]>
+                <![CDATA["verify Login page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:51:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:51:45 IST" duration-ms="8413" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:05:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:05:50 IST" duration-ms="7661" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_001_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_001_Verify logging into the Application using valid credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:51:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:51:51 IST" duration-ms="6369" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:05:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:05:58 IST" duration-ms="7713" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_001_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_002_Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:51:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:51:58 IST" duration-ms="6724" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:05:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:06:05 IST" duration-ms="6803" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_001_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_003_Verify logging into the Application using invalid email address and valid Password)"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:51:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:05 IST" duration-ms="6625" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:06:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:06:11 IST" duration-ms="6349" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_001_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_004_Verify logging into the Application using valid email address and invalid Password)"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:10 IST" duration-ms="5177" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:06:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:06:18 IST" duration-ms="6846" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_001_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_005_Verify logging into the Application without providing any credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:18 IST" duration-ms="7768" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:06:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:06:23 IST" duration-ms="5415" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_002_Verify'Thank you for registering' email is sent to the registered email address as a confirmation for registering the account"]]>
+                <![CDATA["TC_LF_006_Verify 'Forgotten Password' link is available in the Login page and is working"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:23 IST" duration-ms="5024" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:06:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:06:29 IST" duration-ms="5977" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_004_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_007_Verify logging into the Application using Keyboard keys (Tab and Enter)"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:28 IST" duration-ms="4859" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:06:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:06:33 IST" duration-ms="4188" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_004_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_008_Verify E-Mail Address and Password text fields in the Login page have the place holder text"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:34 IST" duration-ms="6475" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:06:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:06:39 IST" duration-ms="5980" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_004_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_011_Verify logging into the Application using inactive credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:40 IST" duration-ms="5793" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:06:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:07:57 IST" duration-ms="77646" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_004_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_012_Verify the number of unsucessful login attemps"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//div[text()='Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.']")
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//div[text()='Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.']")
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5189)
+at org.pages.LoginPage.Warning_message(LoginPage.java:95)
+at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:326)
+at ✽.varify LoginPage "Warning_message" IsDisplayed "Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."(file:///G:/playwrite/PlaywrightJavaCucumberTestNG-master/./src/test/resources/org/features/LoginPage.feature:96)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//div[text()='Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.']")
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+at com.microsoft.playwright.Locator.textContent(Locator.java:5189)
+at org.pages.LoginPage.Warning_message(LoginPage.java:95)
+at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:326)
+at jdk.internal.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:07:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:08:02 IST" duration-ms="4786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC_LF_013_Verify the text into the Password field is toggled to hide its visibility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:45 IST" duration-ms="4906" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:08:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:08:14 IST" duration-ms="12747" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_004_Verify Registering an Account by providing only the Mandatory fields"]]>
+                <![CDATA["TC_LF_015_Verify Logging into the Application after changing the password"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:52:53 IST" duration-ms="7769" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:08:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:08:25 IST" duration-ms="10254" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_005_Verify Registering an Account when 'Yes' option is selected for Newsletter field"]]>
+                <![CDATA["TC_LF_017_Verify Logging into the Application, closing the Browser without loggingout and opening the application in the Browser again"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:52:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:53:01 IST" duration-ms="7876" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:08:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:08:34 IST" duration-ms="9501" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_006_Verify Registering an Account when 'No' option is selected for Newsletter field"]]>
+                <![CDATA["TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right Column options, Header options, Menu Options, Footer options and any other options)"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:53:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:53:05 IST" duration-ms="4899" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:08:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-05T13:08:40 IST" duration-ms="5461" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["TC_RF_007_Verify different ways of navigating to 'Register Account' page"]]>
+                <![CDATA["TC_LF_019_Verify the Breakcrumb, Page Heading, Page Title and Page URL of Login page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["register Functionality"]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:53:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:53:13 IST" duration-ms="7210" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Password Confirm' fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["register Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:53:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:53:20 IST" duration-ms="7744" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing email address)"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["register Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:53:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:53:34 IST" duration-ms="14090" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["register Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:53:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:53:48 IST" duration-ms="13939" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["register Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:53:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:54:03 IST" duration-ms="14431" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["register Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:54:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-28T21:54:17 IST" duration-ms="13980" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["register Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunners.TestRunner@8462f31]" started-at="2026-02-28T21:54:17 IST" name="tearDownClass" finished-at="2026-02-28T21:54:22 IST" duration-ms="4921" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.testRunners.TestRunner@4d1c005e]" started-at="2026-04-05T13:08:40 IST" name="tearDownClass" finished-at="2026-04-05T13:08:49 IST" duration-ms="9429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

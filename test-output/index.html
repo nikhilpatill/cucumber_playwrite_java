@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Nikhil\AppData\Local\Temp\testng-eclipse-2004009433\testng-customsuite.xml</span>
+                    <span>C:\Users\Nikhil\AppData\Local\Temp\testng-eclipse-272808105\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods,   21 passed</span>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_012_Verify the number of unsucessful login attemps&quot;, &quot;Login Functionality&quot;)">runScenario("TC_LF_012_Verify the number of unsucessful login attemps", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,107 +117,77 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_002_Verify logging into the Application using invalid credentials (i.e. Invalid email address...)">runScenario("TC_LF_002_Verify logging into the Application using invalid credentials (i.e. Invalid email address...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right C...)">runScenario("TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right C...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)">runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_006_Verify &#039;Forgotten Password&#039; link is available in the Login page and is working&quot;, &quot;Login F...)">runScenario("TC_LF_006_Verify 'Forgotten Password' link is available in the Login page and is working", "Login F...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)">runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_007_Verify logging into the Application using Keyboard keys (Tab and Enter)&quot;, &quot;Login Function...)">runScenario("TC_LF_007_Verify logging into the Application using Keyboard keys (Tab and Enter)", "Login Function...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_007_Verify different ways of navigating to &#039;Register Account&#039; page&quot;, &quot;register Functionality&quot;)">runScenario("TC_RF_007_Verify different ways of navigating to 'Register Account' page", "register Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_005_Verify logging into the Application without providing any credentials&quot;, &quot;Login Functional...)">runScenario("TC_LF_005_Verify logging into the Application without providing any credentials", "Login Functional...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_008_Verify Registering an Account by entering different passwords into &#039;Password&#039; and &#039;Passwo...)">runScenario("TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Passwo...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_011_Verify logging into the Application using inactive credentials&quot;, &quot;Login Functionality&quot;)">runScenario("TC_LF_011_Verify logging into the Application using inactive credentials", "Login Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_013_Verify the text into the Password field is toggled to hide its visibility&quot;, &quot;Login Functi...)">runScenario("TC_LF_013_Verify the text into the Password field is toggled to hide its visibility", "Login Functi...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_015_Verify Logging into the Application after changing the password&quot;, &quot;Login Functionality&quot;)">runScenario("TC_LF_015_Verify Logging into the Application after changing the password", "Login Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_003_Verify logging into the Application using invalid email address and valid Password)&quot;, &quot;Lo...)">runScenario("TC_LF_003_Verify logging into the Application using invalid email address and valid Password)", "Lo...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_002_Verify&#039;Thank you for registering&#039; email is sent to the registered email address as a conf...)">runScenario("TC_RF_002_Verify'Thank you for registering' email is sent to the registered email address as a conf...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_008_Verify E-Mail Address and Password text fields in the Login page have the place holder te...)">runScenario("TC_LF_008_Verify E-Mail Address and Password text fields in the Login page have the place holder te...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_006_Verify Registering an Account when &#039;No&#039; option is selected for Newsletter field&quot;, &quot;regist...)">runScenario("TC_RF_006_Verify Registering an Account when 'No' option is selected for Newsletter field", "regist...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_004_Verify logging into the Application using valid email address and invalid Password)&quot;, &quot;Lo...)">runScenario("TC_LF_004_Verify logging into the Application using valid email address and invalid Password)", "Lo...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;verify Login page&quot;, &quot;Login Functionality&quot;)">runScenario("verify Login page", "Login Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_019_Verify the Breakcrumb, Page Heading, Page Title and Page URL of Login page&quot;, &quot;Login Funct...)">runScenario("TC_LF_019_Verify the Breakcrumb, Page Heading, Page Title and Page URL of Login page", "Login Funct...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)">runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_001_Verify logging into the Application using valid credentials&quot;, &quot;Login Functionality&quot;)">runScenario("TC_LF_001_Verify logging into the Application using valid credentials", "Login Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_005_Verify Registering an Account when &#039;Yes&#039; option is selected for Newsletter field&quot;, &quot;regis...)">runScenario("TC_RF_005_Verify Registering an Account when 'Yes' option is selected for Newsletter field", "regis...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)">runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing em...)">runScenario("TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing em...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;verify register page&quot;, &quot;register Functionality&quot;)">runScenario("verify register page", "register Functionality")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;TC_LF_017_Verify Logging into the Application, closing the Browser without loggingout and opening t...)">runScenario("TC_LF_017_Verify Logging into the Application, closing the Browser without loggingout and opening t...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -218,6 +202,131 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.testRunners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;TC_LF_012_Verify the number of unsucessful login attemps&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("TC_LF_012_Verify the number of unsucessful login attemps", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("TC_LF_012_Verify the number of unsucessful login attemps","Login Functionality")</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//div[text()=&apos;Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5189)
+	at org.pages.LoginPage.Warning_message(LoginPage.java:95)
+	at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:326)
+	at ✽.varify LoginPage &quot;Warning_message&quot; IsDisplayed &quot;Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.&quot;(file:///G:/playwrite/PlaywrightJavaCucumberTestNG-master/./src/test/resources/org/features/LoginPage.feature:96)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\progress.js:78:26)
+    at Frame._callOnElementOnceMatches (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1464:23)
+    at Frame.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\frames.js:1080:17)
+    at FrameDispatcher.textContent (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\Nikhil\AppData\Local\Temp\playwright-java-15062770924596117592\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(&quot;//div[text()=&apos;Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.&apos;]&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.textContentImpl(FrameImpl.java:818)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$textContent$38(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.FrameImpl.textContent(FrameImpl.java:809)
+	at com.microsoft.playwright.impl.LocatorImpl.textContent(LocatorImpl.java:591)
+	at com.microsoft.playwright.Locator.textContent(Locator.java:5189)
+	at org.pages.LoginPage.Warning_message(LoginPage.java:95)
+	at org.stepDefinations.LoginStepDef.varify_login_page_is_displayed(LoginStepDef.java:326)
+	at jdk.internal.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -226,210 +335,150 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
+                  <a name="runScenario(&quot;TC_LF_002_Verify logging into the Application using invalid credentials (i.e. Invalid email address...)">
+                  </a> <!-- runScenario("TC_LF_002_Verify logging into the Application using invalid credentials (i.e. Invalid email address...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
+                  <span class="parameters">("TC_LF_002_Verify logging into the Application using invalid credentials (i.e. Invalid email address and Invalid Password)","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
+                  <a name="runScenario(&quot;TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right C...)">
+                  </a> <!-- runScenario("TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right C...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
+                  <span class="parameters">("TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right Column options, Header options, Menu Options, Footer options and any other options)","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)">
-                  </a> <!-- runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...) -->
+                  <a name="runScenario(&quot;TC_LF_006_Verify &#039;Forgotten Password&#039; link is available in the Login page and is working&quot;, &quot;Login F...)">
+                  </a> <!-- runScenario("TC_LF_006_Verify 'Forgotten Password' link is available in the Login page and is working", "Login F...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field","register Functionality")</span>
+                  <span class="parameters">("TC_LF_006_Verify 'Forgotten Password' link is available in the Login page and is working","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)">
-                  </a> <!-- runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...) -->
+                  <a name="runScenario(&quot;TC_LF_007_Verify logging into the Application using Keyboard keys (Tab and Enter)&quot;, &quot;Login Function...)">
+                  </a> <!-- runScenario("TC_LF_007_Verify logging into the Application using Keyboard keys (Tab and Enter)", "Login Function...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field","register Functionality")</span>
+                  <span class="parameters">("TC_LF_007_Verify logging into the Application using Keyboard keys (Tab and Enter)","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_007_Verify different ways of navigating to &#039;Register Account&#039; page&quot;, &quot;register Functionality&quot;)">
-                  </a> <!-- runScenario("TC_RF_007_Verify different ways of navigating to 'Register Account' page", "register Functionality") -->
+                  <a name="runScenario(&quot;TC_LF_005_Verify logging into the Application without providing any credentials&quot;, &quot;Login Functional...)">
+                  </a> <!-- runScenario("TC_LF_005_Verify logging into the Application without providing any credentials", "Login Functional...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_007_Verify different ways of navigating to 'Register Account' page","register Functionality")</span>
+                  <span class="parameters">("TC_LF_005_Verify logging into the Application without providing any credentials","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_008_Verify Registering an Account by entering different passwords into &#039;Password&#039; and &#039;Passwo...)">
-                  </a> <!-- runScenario("TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Passwo...) -->
+                  <a name="runScenario(&quot;TC_LF_011_Verify logging into the Application using inactive credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("TC_LF_011_Verify logging into the Application using inactive credentials", "Login Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Password Confirm' fields","register Functionality")</span>
+                  <span class="parameters">("TC_LF_011_Verify logging into the Application using inactive credentials","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
+                  <a name="runScenario(&quot;TC_LF_013_Verify the text into the Password field is toggled to hide its visibility&quot;, &quot;Login Functi...)">
+                  </a> <!-- runScenario("TC_LF_013_Verify the text into the Password field is toggled to hide its visibility", "Login Functi...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
+                  <span class="parameters">("TC_LF_013_Verify the text into the Password field is toggled to hide its visibility","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
+                  <a name="runScenario(&quot;TC_LF_015_Verify Logging into the Application after changing the password&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("TC_LF_015_Verify Logging into the Application after changing the password", "Login Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
+                  <span class="parameters">("TC_LF_015_Verify Logging into the Application after changing the password","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
+                  <a name="runScenario(&quot;TC_LF_003_Verify logging into the Application using invalid email address and valid Password)&quot;, &quot;Lo...)">
+                  </a> <!-- runScenario("TC_LF_003_Verify logging into the Application using invalid email address and valid Password)", "Lo...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
+                  <span class="parameters">("TC_LF_003_Verify logging into the Application using invalid email address and valid Password)","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_002_Verify&#039;Thank you for registering&#039; email is sent to the registered email address as a conf...)">
-                  </a> <!-- runScenario("TC_RF_002_Verify'Thank you for registering' email is sent to the registered email address as a conf...) -->
+                  <a name="runScenario(&quot;TC_LF_008_Verify E-Mail Address and Password text fields in the Login page have the place holder te...)">
+                  </a> <!-- runScenario("TC_LF_008_Verify E-Mail Address and Password text fields in the Login page have the place holder te...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_002_Verify'Thank you for registering' email is sent to the registered email address as a confirmation for registering the account","register Functionality")</span>
+                  <span class="parameters">("TC_LF_008_Verify E-Mail Address and Password text fields in the Login page have the place holder text","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_006_Verify Registering an Account when &#039;No&#039; option is selected for Newsletter field&quot;, &quot;regist...)">
-                  </a> <!-- runScenario("TC_RF_006_Verify Registering an Account when 'No' option is selected for Newsletter field", "regist...) -->
+                  <a name="runScenario(&quot;TC_LF_004_Verify logging into the Application using valid email address and invalid Password)&quot;, &quot;Lo...)">
+                  </a> <!-- runScenario("TC_LF_004_Verify logging into the Application using valid email address and invalid Password)", "Lo...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_006_Verify Registering an Account when 'No' option is selected for Newsletter field","register Functionality")</span>
+                  <span class="parameters">("TC_LF_004_Verify logging into the Application using valid email address and invalid Password)","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
+                  <a name="runScenario(&quot;verify Login page&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("verify Login page", "Login Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
+                  <span class="parameters">("verify Login page","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_004_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
+                  <a name="runScenario(&quot;TC_LF_019_Verify the Breakcrumb, Page Heading, Page Title and Page URL of Login page&quot;, &quot;Login Funct...)">
+                  </a> <!-- runScenario("TC_LF_019_Verify the Breakcrumb, Page Heading, Page Title and Page URL of Login page", "Login Funct...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
+                  <span class="parameters">("TC_LF_019_Verify the Breakcrumb, Page Heading, Page Title and Page URL of Login page","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)">
-                  </a> <!-- runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...) -->
+                  <a name="runScenario(&quot;TC_LF_001_Verify logging into the Application using valid credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("TC_LF_001_Verify logging into the Application using valid credentials", "Login Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field","register Functionality")</span>
+                  <span class="parameters">("TC_LF_001_Verify logging into the Application using valid credentials","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_005_Verify Registering an Account when &#039;Yes&#039; option is selected for Newsletter field&quot;, &quot;regis...)">
-                  </a> <!-- runScenario("TC_RF_005_Verify Registering an Account when 'Yes' option is selected for Newsletter field", "regis...) -->
+                  <a name="runScenario(&quot;TC_LF_017_Verify Logging into the Application, closing the Browser without loggingout and opening t...)">
+                  </a> <!-- runScenario("TC_LF_017_Verify Logging into the Application, closing the Browser without loggingout and opening t...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_005_Verify Registering an Account when 'Yes' option is selected for Newsletter field","register Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)">
-                  </a> <!-- runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field","register Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_001_Verify Registering an Account by providing only the Mandatory fields&quot;, &quot;register Function...)">
-                  </a> <!-- runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields","register Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing em...)">
-                  </a> <!-- runScenario("TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing em...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing email address)","register Functionality")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;verify register page&quot;, &quot;register Functionality&quot;)">
-                  </a> <!-- runScenario("verify register page", "register Functionality") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("verify register page","register Functionality")</span>
+                  <span class="parameters">("TC_LF_017_Verify Logging into the Application, closing the Browser without loggingout and opening the application in the Browser again","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -439,7 +488,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Nikhil\AppData\Local\Temp\testng-eclipse-2004009433\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Nikhil\AppData\Local\Temp\testng-eclipse-272808105\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -496,91 +545,71 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(21);
+data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'org.testRunners.TestRunner')
-data.setCell(0, 3, 24658);
+data.setCell(0, 3, 77646);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'org.testRunners.TestRunner')
-data.setCell(1, 3, 14431);
+data.setCell(1, 3, 26718);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'org.testRunners.TestRunner')
-data.setCell(2, 3, 14090);
+data.setCell(2, 3, 12747);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'org.testRunners.TestRunner')
-data.setCell(3, 3, 13980);
+data.setCell(3, 3, 10254);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'org.testRunners.TestRunner')
-data.setCell(4, 3, 13939);
+data.setCell(4, 3, 9501);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'org.testRunners.TestRunner')
-data.setCell(5, 3, 8413);
+data.setCell(5, 3, 7713);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'org.testRunners.TestRunner')
-data.setCell(6, 3, 7876);
+data.setCell(6, 3, 7661);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'org.testRunners.TestRunner')
-data.setCell(7, 3, 7769);
+data.setCell(7, 3, 6846);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'org.testRunners.TestRunner')
-data.setCell(8, 3, 7768);
+data.setCell(8, 3, 6803);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'org.testRunners.TestRunner')
-data.setCell(9, 3, 7744);
+data.setCell(9, 3, 6349);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'org.testRunners.TestRunner')
-data.setCell(10, 3, 7210);
+data.setCell(10, 3, 5980);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
 data.setCell(11, 2, 'org.testRunners.TestRunner')
-data.setCell(11, 3, 6724);
+data.setCell(11, 3, 5977);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'runScenario')
 data.setCell(12, 2, 'org.testRunners.TestRunner')
-data.setCell(12, 3, 6625);
+data.setCell(12, 3, 5461);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'runScenario')
 data.setCell(13, 2, 'org.testRunners.TestRunner')
-data.setCell(13, 3, 6475);
+data.setCell(13, 3, 5415);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'runScenario')
 data.setCell(14, 2, 'org.testRunners.TestRunner')
-data.setCell(14, 3, 6369);
+data.setCell(14, 3, 4786);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'runScenario')
 data.setCell(15, 2, 'org.testRunners.TestRunner')
-data.setCell(15, 3, 5793);
-data.setCell(16, 0, 16)
-data.setCell(16, 1, 'runScenario')
-data.setCell(16, 2, 'org.testRunners.TestRunner')
-data.setCell(16, 3, 5177);
-data.setCell(17, 0, 17)
-data.setCell(17, 1, 'runScenario')
-data.setCell(17, 2, 'org.testRunners.TestRunner')
-data.setCell(17, 3, 5024);
-data.setCell(18, 0, 18)
-data.setCell(18, 1, 'runScenario')
-data.setCell(18, 2, 'org.testRunners.TestRunner')
-data.setCell(18, 3, 4906);
-data.setCell(19, 0, 19)
-data.setCell(19, 1, 'runScenario')
-data.setCell(19, 2, 'org.testRunners.TestRunner')
-data.setCell(19, 3, 4899);
-data.setCell(20, 0, 20)
-data.setCell(20, 1, 'runScenario')
-data.setCell(20, 2, 'org.testRunners.TestRunner')
-data.setCell(20, 3, 4859);
+data.setCell(15, 3, 4188);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -613,96 +642,78 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">org.testRunners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@28b458e6)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@64440065)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("verify register page", "register Functionality")</span>
-                <span class="method-start">2264 ms</span>
+                <span class="method-name">runScenario("verify Login page", "Login Functionality")</span>
+                <span class="method-start">1850 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">26928 ms</span>
+                <span class="method-name">runScenario("TC_LF_001_Verify logging into the Application using valid credentials", "Login Functionality")</span>
+                <span class="method-start">28576 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">35343 ms</span>
+                <span class="method-name">runScenario("TC_LF_002_Verify logging into the Application using invalid credentials (i.e. Invalid email address...)</span>
+                <span class="method-start">36239 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">41714 ms</span>
+                <span class="method-name">runScenario("TC_LF_003_Verify logging into the Application using invalid email address and valid Password)", "Lo...)</span>
+                <span class="method-start">43955 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">48443 ms</span>
+                <span class="method-name">runScenario("TC_LF_004_Verify logging into the Application using valid email address and invalid Password)", "Lo...)</span>
+                <span class="method-start">50761 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_001_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">55071 ms</span>
+                <span class="method-name">runScenario("TC_LF_005_Verify logging into the Application without providing any credentials", "Login Functional...)</span>
+                <span class="method-start">57111 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_002_Verify'Thank you for registering' email is sent to the registered email address as a conf...)</span>
-                <span class="method-start">60253 ms</span>
+                <span class="method-name">runScenario("TC_LF_006_Verify 'Forgotten Password' link is available in the Login page and is working", "Login F...)</span>
+                <span class="method-start">63959 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">68023 ms</span>
+                <span class="method-name">runScenario("TC_LF_007_Verify logging into the Application using Keyboard keys (Tab and Enter)", "Login Function...)</span>
+                <span class="method-start">69376 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">73055 ms</span>
+                <span class="method-name">runScenario("TC_LF_008_Verify E-Mail Address and Password text fields in the Login page have the place holder te...)</span>
+                <span class="method-start">75356 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">77922 ms</span>
+                <span class="method-name">runScenario("TC_LF_011_Verify logging into the Application using inactive credentials", "Login Functionality")</span>
+                <span class="method-start">79545 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">84398 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("TC_LF_012_Verify the number of unsucessful login attemps", "Login Functionality")</span>
+                <span class="method-start">85528 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_004_Verify Registering an Account by providing only the Mandatory fields", "register Function...)</span>
-                <span class="method-start">90192 ms</span>
+                <span class="method-name">runScenario("TC_LF_013_Verify the text into the Password field is toggled to hide its visibility", "Login Functi...)</span>
+                <span class="method-start">163179 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_005_Verify Registering an Account when 'Yes' option is selected for Newsletter field", "regis...)</span>
-                <span class="method-start">95100 ms</span>
+                <span class="method-name">runScenario("TC_LF_015_Verify Logging into the Application after changing the password", "Login Functionality")</span>
+                <span class="method-start">167967 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_006_Verify Registering an Account when 'No' option is selected for Newsletter field", "regist...)</span>
-                <span class="method-start">102871 ms</span>
+                <span class="method-name">runScenario("TC_LF_017_Verify Logging into the Application, closing the Browser without loggingout and opening t...)</span>
+                <span class="method-start">180715 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_007_Verify different ways of navigating to 'Register Account' page", "register Functionality")</span>
-                <span class="method-start">110750 ms</span>
+                <span class="method-name">runScenario("TC_LF_019_Verify user is able to navigate to different pages from Login page (options like (Right C...)</span>
+                <span class="method-start">190973 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_008_Verify Registering an Account by entering different passwords into 'Password' and 'Passwo...)</span>
-                <span class="method-start">115650 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_009_Verify Registering an Account by providing the existing account details (i.e. existing em...)</span>
-                <span class="method-start">122862 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)</span>
-                <span class="method-start">130608 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)</span>
-                <span class="method-start">144699 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)</span>
-                <span class="method-start">158639 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">runScenario("TC_RF_010_Verify Registering an Account by providing an invalid email address into the E-Mail field...)</span>
-                <span class="method-start">173072 ms</span>
+                <span class="method-name">runScenario("TC_LF_019_Verify the Breakcrumb, Page Heading, Page Title and Page URL of Login page", "Login Funct...)</span>
+                <span class="method-start">200475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">187063 ms</span>
+                <span class="method-start">205948 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
